@@ -45,7 +45,7 @@ I want to be able to add other Users' words to my own Wordlist.
 
 As a registered User,
 So I can let other Users know that Word is useful,
-I want to be able to 'like' a Word.
+I want to be able to 'like' a Word. (see Maker's rails tutorial for associations)
 
 As a registered User,
 So I can correct other peoples' mistakes,

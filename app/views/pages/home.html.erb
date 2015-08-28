@@ -1,3 +1,9 @@
+<%= form_tag('/get_definition', method: 'get') do %>
+  <%= label_tag(:word, "Word:") %>
+  <%= text_field_tag(:word) %>
+  <%= submit_tag("Define") %>
+<% end %>
+
 <h1>Hello, World!</h1>
 
 <% @wordlists.each do |wordlist| %>
