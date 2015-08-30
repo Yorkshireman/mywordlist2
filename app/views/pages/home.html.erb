@@ -1,8 +1,10 @@
-<%= form_tag('/get_definition', remote: true, method: 'get') do %>
+<%= form_tag('/display_definition', method: 'get') do %>
   <%= label_tag(:word, "Word:") %>
   <%= text_field_tag(:word) %>
   <%= submit_tag("Define") %>
 <% end %>
+
+<%= render "/shared/definition" %>
 
 <h1>Hello, World!</h1>
 
