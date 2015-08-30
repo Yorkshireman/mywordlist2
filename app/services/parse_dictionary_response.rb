@@ -1,6 +1,6 @@
 class ParseDictionaryResponse
 
-    def self.call(hash)
+  def self.call(hash)
     entries_array = []
     final_array = []
 

@@ -20,7 +20,7 @@ RSpec.describe "Home Page" do
 
   context "when submitting a dictionary definition" do
     it "displays response on the page" do
-      allow_any_instance_of(PagesController).to receive(:get_definition).with("word").and_return("response")
+      allow(GetDefinition).to receive(:call).with("word").and_return("response")
       allow(ParseDictionaryResponse).to receive(:call).with("response").and_return(["response"])
       fill_in 'word', with: "word"
       click_button 'Define'

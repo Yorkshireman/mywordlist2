@@ -7,7 +7,6 @@ Rails.application.routes.draw do
 
   root 'pages#home'
   get '/display_definition' => 'pages#display_definition'
-  get '/get_definition' => 'pages#get_definition'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
